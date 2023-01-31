@@ -2,9 +2,9 @@
 using namespace std;
 int main() {
    int j =12;
-   int& k= j;
-   cout<<k<<endl;
+   int& p= j;
+   cout<<p<<endl;
    j++;
-   cout<<k<<endl;
+   cout<<p<<endl;
     return 0;
 }
