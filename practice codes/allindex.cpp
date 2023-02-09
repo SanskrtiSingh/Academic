@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+int allIndexes(int input[], int size, int x, int output[], int startIndex = 0,int i = 0) {
+   
+    if(startIndex == size)
+    {
+      return i;
+    }
+    if(input[startIndex] == x)
+    {
+      output[i] = startIndex;
+      i++;
+    }
+    return allIndexes(input,size,x,output,startIndex+1,i);
+
+}
+
+int main(){
+    int n;
+    cin >> n;
+  
+    int *input = new int[n];
+    
+    for(int i = 0; i < n; i++) {
+        cin >> input[i];
+    }
+    
+    int x;
+    
+    cin >> x;
+    
+    int *output = new int[n];
+    
+    int size = allIndexes(input, n, x, output);
+    for(int i = 0; i < size; i++) {
+        cout << output[i] << " ";
+    }
+    
+    delete [] input;
+    
+    delete [] output;
+    
+
+}
