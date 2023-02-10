@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <bits/stdc++.h> 
 using namespace std; 
 
 double geometricSum(int k) 
@@ -15,6 +15,7 @@ int main()
 { 
 	int k;
 	cin>>k;
+    cout <<fixed<<setprecision(5); 
 	cout << geometricSum(k) << endl; 
 	return 0; 
 }
