@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1674805360983-a8b8a2def7f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    background-size: cover;
+}
+#heading{
+    text-align: center;
+    margin-top:10px;
+    color:white;
+}
+#contactus{
+    position:relative;
+    left:94%;
+    text-decoration: none;
+    color:blanchedalmond;
+}
+#seperator{
+    width:80%;
+    height:5px;
+    background:rgb(248, 116, 138);
+}
+#leftpanel{
+    float:left;
+    height:70%;
+    width:20%;
+    background:rgb(13, 13, 59);
+    color:white;
+}
+#rightpanel{
+    background-image:url('https://images.unsplash.com/photo-1660798027105-5da8ad164e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height:70%;
+    width:80%;
+    float:left;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width:220px;
+    height:150px;
+    border:2px solid black;
+    margin:40px;
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+color:white;
+text-decoration:none;
+background-color: black;
+}
+.card:hover{
+    background-color: white;
+    color:black;
+}
+
+#footer{
+    background:rgb(21, 21, 21);
+    border:2px solid white;
+    width:100%;
+    color:white;
+    position:absolute;
+    bottom:0px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <a id="contactus" href="contactus.html">Contact Us</a>
+    <h1 id="heading">WELCOME TO MY BLOG</h1>
+    <div id="seperator"></div>
+    <div id="leftpanel">
+        <marquee direction="up" behaviour="" height="100%">
+            <h2>My Strength</h2>
+            <ul>
+                <li>creativity</li>
+                <li>versatibility</li>
+                <li>flexibility</li>
+                <li>focused</li>
+                <li>taking initiative</li>
+                <li>honesty</li>
+                <li>dedication</li>
+                <li>integrity</li>
+                <li>continuous learning</li>
+                <li>self-control</li>
+            </ul>
+        </marquee>
+    </div>
+    <div id="rightpanel">
+        <div>
+            <a href=card.html></a><div class="card" >Term 1 Courses</div></a>
+            <a href=card.html></a><div class="card">Term 2 Courses</div></a>
+        </div>
+        <div>
+            <a href=card.html><div class="card">Term 3 Courses</div></a>
+            <a href=card.html></a><div class="card">Term 4 Courses</div></a>
+        </div>
+    </div>
+    <div id="footer">
+        copyright @ myself
+    </div>
+</body>
+</html>
